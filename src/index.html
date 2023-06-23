@@ -1,3 +1,14 @@
+<!--  
+	    hi im thiunuwan !
+                its  nice to see u here ;)
+                                            -->
+<!-- <pre>  __  .__    .__                                           
+												_/  |_|  |__ |__|__ __  ____  __ ____  _  _______    ____  
+												\   __\  |  \|  |  |  \/    \|  |  \ \/ \/ /\__  \  /    \ 
+												 |  | |   Y  \  |  |  /   |  \  |  /\     /  / __ \|   |  \
+												 |__| |___|  /__|____/|___|  /____/  \/\_/  (____  /___|  /
+														   \/              \/                    \/     \/ </pre> -->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -26,35 +37,96 @@
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
 			integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
 			rel="stylesheet" />
-		>
-
 		<title>Thiunuwan</title>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+		<script type="text/javascript">
+			emailjs.init('VCG0NZdqW-JAzUun3');
+		</script>
+
+		<script>
+			(function () {
+				// https://dashboard.emailjs.com/admin/account
+				emailjs.init('VCG0NZdqW-JAzUun3');
+			})();
+		</script>
 	</head>
 	<body>
 		<header>
-			<section class="container">
-				<div class="header d-flex justify-content-between pt-2 pb-2">
+			<!-- <section class="container">
+				<div class="header d-flex justify-content-between pt-2 pb-2 pt-3 bg-danger">
 					<span>
 						<a
 							class="header_home"
-							href="#">
-							thiunuwan
+							href="#"
+							style="cursor: default">
+							<span class="custom_text">thiunuwan</span>
+							<br />
+
 							<span class="visuallyhidden">(to home page)</span>
 						</a>
 					</span>
 
 					<nav class="header_nav d-none d-md-flex align-items-center gap-5">
-						<a href="">Home</a>
-						<a href="">About</a>
-						<a href="">Projects</a>
-						<a href="">Contact</a>
+						<a href="#home">Home</a>
+						<a href="#projects">Projects</a>
+						<a
+							href="#contact"
+							class="me-5"
+							>Contact</a
+						>
+					</nav>
+				</div>
+			</section> -->
+
+			<section class="container">
+				<div
+					class="header d-flex justify-content-between pb-2 pt-3"
+					style="
+						position: fixed;
+						left: 0;
+						top: 0;
+						width: 100%;
+
+						background-color: rgb(56, 57, 59);
+					">
+					<span>
+						<a
+							class="header_home"
+							style="cursor: default">
+							<span
+								class="custom_text"
+								style="margin-left: 12vw"
+								>thiunuwan</span
+							>
+							<br />
+							<span class="visuallyhidden">(to home page)</span>
+						</a>
+					</span>
+
+					<nav
+						class="header_nav d-none d-md-flex align-items-center gap-5"
+						style="margin-right: 200px">
+						<a href="#home">Home</a>
+						<!-- <a href="">About</a> -->
+						<a href="#projects">Projects</a>
+						<a
+							href="#contact"
+							class="me-5"
+							>Contact</a
+						>
 					</nav>
 				</div>
 			</section>
 		</header>
+		<p id="home">.</p>
 
 		<main class="container mt-lg-5">
-			<section class="row pt-5 mb-5">
+			<section
+				class="row pt-5 mb-5"
+				style="margin-top: 110px">
 				<div
 					class="col-12 col-lg-5 d-flex justify-content-center order-lg-1 align-items-center pb-lg-0 pb-5">
 					<picture class="d-flex justify-content-center">
@@ -65,19 +137,33 @@
 					</picture>
 				</div>
 				<div
-					class="col-12 col-lg-7 order-lg-0 d-flex flex-column align-items-lg-start align-items-center">
+					class="col-12 col-lg-7 order-lg-0 d-flex flex-column align-items-lg-start align-items-center mb-5">
 					<h1 class="hero__headline">
 						Nice to meet you ! <br />
-						I'm <span id="typewriter"></span>
+						<br />
+						I'm <span id="message"></span>
 					</h1>
 					<p
-						class="hero__description"
+						class="hero__description mt-5 mb-5"
 						style="text-align: justify">
 						I am an undergraduate from the IT Faculty of the University of Moratuwa, and I am
 						passionate about technology. Welcome to my portfolio website, where I showcase my skills
 						and projects in these exciting fields. Let's explore the limitless possibilities
 						together!
 					</p>
+
+					<div class="mb-5">
+						<button
+							class="btn btn-primary cv-btn"
+							style="background-color: rgb(239, 233, 233); border: 1px solid black">
+							<a
+								href="/src/assets/RT_CV.pdf"
+								target="_blank"
+								style="color: rgb(19, 19, 20); text-decoration: none"
+								>View Resume</a
+							>
+						</button>
+					</div>
 					<!--            <a class="hero__contact underline" href="">Contact me</a>-->
 					<span class="d-flex gap-3 align-items-center">
 						<a
@@ -279,40 +365,52 @@
         </div>
     </section>-->
 
+			<hr
+				id="projects"
+				style="border-color: white; height: 2px; margin-bottom: 100px" />
+
 			<section class="container my-5">
-				<h2 class="projects__headline header-xl mb-4">Projects</h2>
+				<h2
+					class="projects__headline header-xl mb-4 mt-5"
+					style="margin-top: 100px">
+					Projects
+				</h2>
 				<div class="row mb-5">
 					<div class="col-12 col-lg-6 d-flex flex-column align-items-center">
 						<picture class="projects__picture">
 							<source
 								media="(min-width: 62.5em)"
-								srcset="assets/images/thumbnail-project-1-small.webp" />
+								srcset="assets/images/aloqAt.png" />
 							<img
-								alt="screenshot of design portfolio website"
+								alt="screenshot of website"
 								class="projects__image"
 								height="300"
-								src="assets/images/thumbnail-project-1-small.webp" />
+								src="assets/images/aloqAt.png" />
 						</picture>
-						<h3 class="projects__name">Design Portfolio</h3>
+						<h3 class="projects__name">Alloc@</h3>
+						<h3
+							class="projects__name"
+							style="text-align: center">
+							Seat Allocation and Cost Allocation System
+						</h3>
 						<p class="projects__tags">
-							<span>HTML</span>
-							<span>CSS</span>
+							<span>Angular</span>
+							<span class="ms-5">Springboot</span>
+							<span class="ms-5">MySQL</span>
 						</p>
 						<p class="px-lg-5 px-1 pro-des">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi corporis
-							esse facere fugit, id incidunt ipsam ipsum laborum nam, nemo numquam quam, quibusdam
-							quisquam quos sit tempora tenetur voluptatum.
+							This is a project to develop a web application to allocate meeting rooms and cubicles
+							in the office premises based on their availability and to generate detailed reports
+							including the cost for the resource usage for each company of MG group.The overall aim
+							of this project is to develop a Smart Workspace Management software which creates
+							smart and premium workspace culture.(Ongoing)
 						</p>
 						<div class="projects__links d-flex flex-column align-items-center">
 							<a
-								class="underline"
-								href=""
-								>View Project</a
-							>
-							<a
-								class="underline"
-								href=""
-								>View Code</a
+								class="underline mt-3"
+								href="https://github.com/orgs/Team-Majento/repositories"
+								target="_blank"
+								><u>View Code</u></a
 							>
 						</div>
 					</div>
@@ -320,21 +418,32 @@
 						<picture class="projects__picture">
 							<source
 								media="(min-width: 62.5em)"
-								srcset="assets/images/thumbnail-project-1-small.webp" />
+								srcset="assets/images/wire_citting.png" />
 							<img
 								alt="screenshot of design portfolio website"
 								class="projects__image"
-								src="assets/images/thumbnail-project-1-small.webp" />
+								src="assets/images/wire_citting.png" />
 						</picture>
-						<h3 class="projects__name">Design Portfolio</h3>
+						<h3
+							class="projects__name"
+							style="text-align: center">
+							Automated wire-cutting machine
+						</h3>
+						<h3
+							class="projects__name"
+							style="text-align: center">
+							(1st-year hardware project)
+						</h3>
 						<p class="projects__tags">
-							<span>HTML</span>
-							<span>CSS</span>
+							<span> C language</span>
+							<span class="ms-2">Atmel Studio</span>
+							<span class="ms-2">Proteus</span>
+							<span class="ms-2">Atmega32</span>
 						</p>
 						<p class="px-lg-5 px-1 pro-des">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi corporis
-							esse facere fugit, id incidunt ipsam ipsum laborum nam, nemo numquam quam, quibusdam
-							quisquam quos sit tempora tenetur voluptatum.
+							This is also a group project to automatically cut the wires and strip wires according
+							to the user given lengths. We have used Atmega 32 sensor and other sensors as hardware
+							components. As technologies we used Atmel studio, proteus and blender
 						</p>
 						<div class="projects__links d-flex flex-column align-items-center">
 							<a
@@ -491,6 +600,10 @@
 					</div>
 				</div>
 			</section>
+
+			<hr
+				id="contact"
+				style="border-color: white; height: 2px; margin-bottom: 100px" />
 
 			<section class="container mt-5">
 				<h2 class="projects__headline header-xl mb-4">Contact</h2>
@@ -540,6 +653,7 @@
 							Submit
 						</button>
 					</form>
+				
 				</div>
 			</section>
 		</main>
@@ -561,6 +675,5 @@
 		<!--        </nav>-->
 		<!--    </div>-->
 		<!--</footer>-->
-		<script src="script.js"></script>
 	</body>
 </html>

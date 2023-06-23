@@ -65,7 +65,7 @@ p {
 	color: var(--text2);
 }
 
-a {
+.custom_text {
 	transition: color 350ms ease-in-out;
 }
 
@@ -86,8 +86,12 @@ a.underline {
 	background-size: 8px 2px;
 }
 
-a:hover {
+.custom_text:hover {
 	color: var(--accent) !important;
+}
+
+.cv-btn:hover {
+	border: 5px soild var(--accent);
 }
 
 .header_nav > a {
@@ -125,6 +129,16 @@ a:hover {
 	text-decoration: none;
 }
 
+.span {
+	animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
+
 .social-img img {
 	display: block;
 }
@@ -144,8 +158,10 @@ a:hover {
 	padding-bottom: 80px;
 	border-bottom: 1px solid var(--text2);
 }
+
 .hero__image {
 	outline: 4px solid var(--accent);
+	/* background-image: url('img/me.png'); */
 	display: block;
 	width: 350px;
 	height: auto;
