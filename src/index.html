@@ -1,61 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <title>Thiunuwan</title>
-</head>
-<body>
-<header class="header">
-    <div class="wrapper">
-        <nav class="header_nav">
-            <a href="#" class="header_home">
-                thiunuwan
-                <span class="visuallyhidden">(to home page)</span>
-            </a>
-            <a href="https://github.com/thiunuwan" target=”_blank”  class="social-img"><img src="img/g4.png" alt="GitHub" width="35" height="35"></a>
-            <a href="https://www.linkedin.com/in/ravindu-thiunuwan-48509324b/" target=”_blank”  class="social-img"><img src="img/ln.png" alt="LinkedIn" width="38" height="38"></a>
-            <a href="https://www.hackerrank.com/thiunuwan?hr_r=1" target=”_blank”  class="social-img last"><img src="img/hr-2.png" alt="hackerrank" width="38" height="38"></a>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+			name="viewport" />
+		<meta
+			content="ie=edge"
+			http-equiv="X-UA-Compatible" />
+		<link
+			href="https://fonts.googleapis.com"
+			rel="preconnect" />
+		<link
+			crossorigin
+			href="https://fonts.gstatic.com"
+			rel="preconnect" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap"
+			rel="stylesheet" />
+		<link
+			href="styles.css"
+			rel="stylesheet" />
+		<link
+			crossorigin="anonymous"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+			integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+			rel="stylesheet" />
+		<title>Thiunuwan</title>
+	</head>
+	<body>
+		<header>
+			<section class="container">
+				<div class="header d-flex justify-content-between pt-2 pb-2">
+					<span>
+						<a
+							class="header_home"
+							href="#">
+							thiunuwan
+							<span class="visuallyhidden">(to home page)</span>
+						</a>
+					</span>
 
-        </nav>
-    </div>
+					<nav class="header_nav d-none d-md-flex align-items-center gap-5">
+						<a href="">Home</a>
+						<a href="">About</a>
+						<a href="">Projects</a>
+						<a href="">Contact</a>
+					</nav>
+				</div>
+			</section>
+		</header>
 
-</header>
+		<main class="container mt-lg-5">
+			<section class="row pt-5 mb-5">
+				<div
+					class="col-12 col-lg-5 d-flex justify-content-center order-lg-1 align-items-center pb-lg-0 pb-5">
+					<picture class="d-flex justify-content-center">
+						<img
+							alt="picture of myself"
+							class="hero__image"
+							src="img/me.png" />
+					</picture>
+				</div>
+				<div
+					class="col-12 col-lg-7 order-lg-0 d-flex flex-column align-items-lg-start align-items-center">
+					<h1 class="hero__headline">
+						Nice to meet you ! <br />
+						I'm <span>Thiunuwan</span>
+					</h1>
+					<p
+						class="hero__description"
+						style="text-align: justify">
+						I am an undergraduate from the IT Faculty of the University of Moratuwa, and I am
+						passionate about technology. Welcome to my portfolio website, where I showcase my skills
+						and projects in these exciting fields. Let's explore the limitless possibilities
+						together!
+					</p>
+					<!--            <a class="hero__contact underline" href="">Contact me</a>-->
+					<span class="d-flex gap-3 align-items-center">
+						<a
+							class="social-img"
+							href="https://github.com/thiunuwan"
+							target="”_blank”">
+							<img
+								alt="GitHub"
+								height="35"
+								src="img/g4.png"
+								width="35" />
+						</a>
+						<a
+							class="social-img"
+							href="https://www.linkedin.com/in/ravindu-thiunuwan-48509324b/"
+							target="”_blank”"
+							><img
+								alt="LinkedIn"
+								height="38"
+								src="img/ln.png"
+								width="38"
+						/></a>
+						<a
+							class="social-img last"
+							href="https://www.hackerrank.com/thiunuwan?hr_r=1"
+							target="”_blank”"
+							><img
+								alt="hackerrank"
+								height="38"
+								src="img/hr-2.png"
+								width="38"
+						/></a>
+					</span>
+				</div>
+			</section>
 
-
-
-<main id="main">
-
-   <section class="hero">
-       <div class="wrapper hero_wrapper">
-           <picture>
-<!--               <source media="(62.5em)" srcset="img/me.jpg">-->
-<!--               <source media="(37.5.5em)" srcset="img/me.jpg">-->
-               <img class="hero__image" src="img/me.png" alt="picture of myself" width="300" height="300">
-           </picture>
-
-           <div class="hero__text">
-               <h1 class="hero__headline">Nice to meet you ! <br/> I'm <span>Thiunuwan</span></h1>
-
-               <p class="hero__description" style="text-align: justify;">
-                   I am an undergraduate from the IT Faculty of the University of Moratuwa, and I am passionate about technology. Welcome to my portfolio website, where I showcase my skills and projects in these exciting fields. Let's explore the limitless possibilities together!</p>
-
-               <a href="" class="hero__contact underline">Contact me</a>
-           </div>
-
-       </div>
-   </section>
-    <section class="projects">
+			<!--<section class="projects">
         <div class="wrapper projects__wrapper">
             <div class="projects__grid">
                 <h2 class="projects__headline header-xl">Projects</h2>
-                <a href="#contact" class="projects__contact underline"
+                <a class="projects__contact underline" href="#contact"
                 >Contact me</a
                 >
 
@@ -66,11 +127,11 @@
                                 srcset="/assets/images/thumbnail-project-1-large.webp"
                         />
                         <img
-                                class="projects__image"
-                                src="/assets/images/thumbnail-project-1-small.webp"
                                 alt="screenshot of design portfolio website"
-                                width-="343"
+                                class="projects__image"
                                 height="253"
+                                src="/assets/images/thumbnail-project-1-small.webp"
+                                width-="343"
                         />
                     </picture>
                     <h3 class="projects__name">Design Portfolio</h3>
@@ -79,8 +140,8 @@
                         <span>CSS</span>
                     </p>
                     <div class="projects__links">
-                        <a href="" class="underline">View Project</a>
-                        <a href="" class="underline">View Code</a>
+                        <a class="underline" href="">View Project</a>
+                        <a class="underline" href="">View Code</a>
                     </div>
                 </div>
 
@@ -91,11 +152,11 @@
                                 srcset="/assets/images/thumbnail-project-2-large.webp"
                         />
                         <img
-                                class="projects__image"
-                                src="/assets/images/thumbnail-project-2-small.webp"
                                 alt="screenshot of learning platform website with different courses"
-                                width-="343"
+                                class="projects__image"
                                 height="253"
+                                src="/assets/images/thumbnail-project-2-small.webp"
+                                width-="343"
                         />
                     </picture>
                     <h3 class="projects__name">E-Learning Landing Page</h3>
@@ -104,8 +165,8 @@
                         <span>CSS</span>
                     </p>
                     <div class="projects__links">
-                        <a href="" class="underline">View Project</a>
-                        <a href="" class="underline">View Code</a>
+                        <a class="underline" href="">View Project</a>
+                        <a class="underline" href="">View Code</a>
                     </div>
                 </div>
 
@@ -116,11 +177,11 @@
                                 srcset="/assets/images/thumbnail-project-3-large.webp"
                         />
                         <img
-                                class="projects__image"
-                                src="/assets/images/thumbnail-project-3-small.webp"
                                 alt="screenshot of To Do App showing a list of active and complete tasks"
-                                width-="343"
+                                class="projects__image"
                                 height="253"
+                                src="/assets/images/thumbnail-project-3-small.webp"
+                                width-="343"
                         />
                     </picture>
                     <h3 class="projects__name">Todo Web App</h3>
@@ -130,8 +191,8 @@
                         <span>JavaScript</span>
                     </p>
                     <div class="projects__links">
-                        <a href="" class="underline">View Project</a>
-                        <a href="" class="underline">View Code</a>
+                        <a class="underline" href="">View Project</a>
+                        <a class="underline" href="">View Code</a>
                     </div>
                 </div>
 
@@ -142,11 +203,11 @@
                                 srcset="/assets/images/thumbnail-project-4-large.webp"
                         />
                         <img
-                                class="projects__image"
-                                src="/assets/images/thumbnail-project-4-small.webp"
                                 alt="screenshot of video player app with grid of thumbnails of movies and TV shows"
-                                width-="343"
+                                class="projects__image"
                                 height="253"
+                                src="/assets/images/thumbnail-project-4-small.webp"
+                                width-="343"
                         />
                     </picture>
                     <h3 class="projects__name">Entertainment Web App</h3>
@@ -156,8 +217,8 @@
                         <span>JavaScript</span>
                     </p>
                     <div class="projects__links">
-                        <a href="" class="underline">View Project</a>
-                        <a href="" class="underline">View Code</a>
+                        <a class="underline" href="">View Project</a>
+                        <a class="underline" href="">View Code</a>
                     </div>
                 </div>
 
@@ -168,11 +229,11 @@
                                 srcset="/assets/images/thumbnail-project-5-large.webp"
                         />
                         <img
-                                class="projects__image"
-                                src="/assets/images/thumbnail-project-5-small.webp"
                                 alt="screenshot of 4-player memory game with circular tiles that have symbols"
-                                width-="343"
+                                class="projects__image"
                                 height="253"
+                                src="/assets/images/thumbnail-project-5-small.webp"
+                                width-="343"
                         />
                     </picture>
                     <h3 class="projects__name">Memory Game</h3>
@@ -182,8 +243,8 @@
                         <span>JavaScript</span>
                     </p>
                     <div class="projects__links">
-                        <a href="" class="underline">View Project</a>
-                        <a href="" class="underline">View Code</a>
+                        <a class="underline" href="">View Project</a>
+                        <a class="underline" href="">View Code</a>
                     </div>
                 </div>
 
@@ -194,11 +255,11 @@
                                 srcset="/assets/images/thumbnail-project-6-large.webp"
                         />
                         <img
-                                class="projects__image"
-                                src="/assets/images/thumbnail-project-6-small.webp"
                                 alt="grid of thumbnails of famous works of art"
-                                width-="343"
+                                class="projects__image"
                                 height="253"
+                                src="/assets/images/thumbnail-project-6-small.webp"
+                                width-="343"
                         />
                     </picture>
                     <h3 class="projects__name">Art Gallery Showcase</h3>
@@ -208,112 +269,295 @@
                         <span>JavaScript</span>
                     </p>
                     <div class="projects__links">
-                        <a href="" class="underline">View Project</a>
-                        <a href="" class="underline">View Code</a>
+                        <a class="underline" href="">View Project</a>
+                        <a class="underline" href="">View Code</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
-    <section id="contact" class="contact bg-less-dark">
-        <div class="wrapper contact__wrapper bottom-border">
-            <div class="contact__text">
-                <h2 class="contact__headline header-xl">Contact</h2>
-                <p class="contact__description">
-                    I would love to hear about your project and how I could help.
-                    Please fill in the form, and I'll get back to you as soon as
-                    possible.
-                </p>
-            </div>
-            <form action="" class="contact__form">
-                <div class="contact__control">
-                    <label for="name" class="visually-hidden">Name</label>
-                    <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Name"
-                            required
-                    />
-                    <img
-                            src="/assets/images/icon-invalid.svg"
-                            alt=""
-                            class="contact__invalid-icon"
-                            width="24"
-                            height="24"
-                    />
-                </div>
-                <div class="contact__control">
-                    <label for="email" class="visually-hidden">Email</label>
-                    <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="Email"
-                            required
-                    />
-                    <img
-                            src="/assets/images/icon-invalid.svg"
-                            alt=""
-                            class="contact__invalid-icon"
-                            width="24"
-                            height="24"
-                    />
-                </div>
-                <div class="contact__control">
-                    <label for="message" class="visually-hidden">Message</label>
-                    <textarea
-                            name="message"
-                            id="message"
-                            cols="30"
-                            rows="3"
-                            placeholder="Message"
-                            required
-                    ></textarea>
-                    <img
-                            src="/assets/images/icon-invalid.svg"
-                            alt=""
-                            class="contact__invalid-icon"
-                            width="24"
-                            height="24"
-                    />
-                </div>
-                <div class="contact__control align-right">
-                    <button type="submit">Send Message</button>
-                </div>
-            </form>
-        </div>
-        <img
-                class="contact__rings"
-                src="/assets/images/pattern-rings.svg"
-                alt=""
-                width="530"
-                height="129"
-        />
-    </section>
+			<section class="container my-5">
+				<h2 class="projects__headline header-xl mb-4">Projects</h2>
+				<div class="row mb-5">
+					<div class="col-12 col-lg-6 d-flex flex-column align-items-center">
+						<picture class="projects__picture">
+							<source
+								media="(min-width: 62.5em)"
+								srcset="assets/images/thumbnail-project-1-small.webp" />
+							<img
+								alt="screenshot of design portfolio website"
+								class="projects__image"
+								height="300"
+								src="assets/images/thumbnail-project-1-small.webp" />
+						</picture>
+						<h3 class="projects__name">Design Portfolio</h3>
+						<p class="projects__tags">
+							<span>HTML</span>
+							<span>CSS</span>
+						</p>
+						<p class="px-lg-5 px-1 pro-des">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi corporis
+							esse facere fugit, id incidunt ipsam ipsum laborum nam, nemo numquam quam, quibusdam
+							quisquam quos sit tempora tenetur voluptatum.
+						</p>
+						<div class="projects__links d-flex flex-column align-items-center">
+							<a
+								class="underline"
+								href=""
+								>View Project</a
+							>
+							<a
+								class="underline"
+								href=""
+								>View Code</a
+							>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 d-flex flex-column align-items-center">
+						<picture class="projects__picture">
+							<source
+								media="(min-width: 62.5em)"
+								srcset="assets/images/thumbnail-project-1-small.webp" />
+							<img
+								alt="screenshot of design portfolio website"
+								class="projects__image"
+								src="assets/images/thumbnail-project-1-small.webp" />
+						</picture>
+						<h3 class="projects__name">Design Portfolio</h3>
+						<p class="projects__tags">
+							<span>HTML</span>
+							<span>CSS</span>
+						</p>
+						<p class="px-lg-5 px-1 pro-des">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi corporis
+							esse facere fugit, id incidunt ipsam ipsum laborum nam, nemo numquam quam, quibusdam
+							quisquam quos sit tempora tenetur voluptatum.
+						</p>
+						<div class="projects__links d-flex flex-column align-items-center">
+							<a
+								class="underline"
+								href=""
+								>View Project</a
+							>
+							<a
+								class="underline"
+								href=""
+								>View Code</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="row mb-5">
+					<div class="col-12 col-lg-6 d-flex flex-column align-items-center">
+						<picture class="projects__picture">
+							<source
+								media="(min-width: 62.5em)"
+								srcset="assets/images/thumbnail-project-1-small.webp" />
+							<img
+								alt="screenshot of design portfolio website"
+								class="projects__image"
+								height="300"
+								src="assets/images/thumbnail-project-1-small.webp" />
+						</picture>
+						<h3 class="projects__name">Design Portfolio</h3>
+						<p class="projects__tags">
+							<span>HTML</span>
+							<span>CSS</span>
+						</p>
+						<p class="px-lg-5 px-1 pro-des">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi corporis
+							esse facere fugit, id incidunt ipsam ipsum laborum nam, nemo numquam quam, quibusdam
+							quisquam quos sit tempora tenetur voluptatum.
+						</p>
+						<div class="projects__links d-flex flex-column align-items-center">
+							<a
+								class="underline"
+								href=""
+								>View Project</a
+							>
+							<a
+								class="underline"
+								href=""
+								>View Code</a
+							>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 d-flex flex-column align-items-center">
+						<picture class="projects__picture">
+							<source
+								media="(min-width: 62.5em)"
+								srcset="assets/images/thumbnail-project-1-small.webp" />
+							<img
+								alt="screenshot of design portfolio website"
+								class="projects__image"
+								height="300"
+								src="assets/images/thumbnail-project-1-small.webp" />
+						</picture>
+						<h3 class="projects__name">Design Portfolio</h3>
+						<p class="projects__tags">
+							<span>HTML</span>
+							<span>CSS</span>
+						</p>
+						<p class="px-lg-5 px-1 pro-des">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi corporis
+							esse facere fugit, id incidunt ipsam ipsum laborum nam, nemo numquam quam, quibusdam
+							quisquam quos sit tempora tenetur voluptatum.
+						</p>
+						<div class="projects__links d-flex flex-column align-items-center">
+							<a
+								class="underline"
+								href=""
+								>View Project</a
+							>
+							<a
+								class="underline"
+								href=""
+								>View Code</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="row mb-5">
+					<div class="col-12 col-lg-6 d-flex flex-column align-items-center">
+						<picture class="projects__picture">
+							<source
+								media="(min-width: 62.5em)"
+								srcset="assets/images/thumbnail-project-1-small.webp" />
+							<img
+								alt="screenshot of design portfolio website"
+								class="projects__image"
+								height="300"
+								src="assets/images/thumbnail-project-1-small.webp" />
+						</picture>
+						<h3 class="projects__name">Design Portfolio</h3>
+						<p class="projects__tags">
+							<span>HTML</span>
+							<span>CSS</span>
+						</p>
+						<p class="px-lg-5 px-1 pro-des">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi corporis
+							esse facere fugit, id incidunt ipsam ipsum laborum nam, nemo numquam quam, quibusdam
+							quisquam quos sit tempora tenetur voluptatum.
+						</p>
+						<div class="projects__links d-flex flex-column align-items-center">
+							<a
+								class="underline"
+								href=""
+								>View Project</a
+							>
+							<a
+								class="underline"
+								href=""
+								>View Code</a
+							>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 d-flex flex-column align-items-center">
+						<picture class="projects__picture">
+							<source
+								media="(min-width: 62.5em)"
+								srcset="assets/images/thumbnail-project-1-small.webp" />
+							<img
+								alt="screenshot of design portfolio website"
+								class="projects__image"
+								height="300"
+								src="assets/images/thumbnail-project-1-small.webp" />
+						</picture>
+						<h3 class="projects__name">Design Portfolio</h3>
+						<p class="projects__tags">
+							<span>HTML</span>
+							<span>CSS</span>
+						</p>
+						<p class="px-lg-5 px-1 pro-des">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi corporis
+							esse facere fugit, id incidunt ipsam ipsum laborum nam, nemo numquam quam, quibusdam
+							quisquam quos sit tempora tenetur voluptatum.
+						</p>
+						<div class="projects__links d-flex flex-column align-items-center">
+							<a
+								class="underline"
+								href=""
+								>View Project</a
+							>
+							<a
+								class="underline"
+								href=""
+								>View Code</a
+							>
+						</div>
+					</div>
+				</div>
+			</section>
 
-</main>
+			<section class="container mt-5">
+				<h2 class="projects__headline header-xl mb-4">Contact</h2>
+				<div class="row justify-content-center">
+					<form style="max-width: 800px">
+						<div class="form-group my-3">
+							<label
+								for="name"
+								class="my-1"
+								>Your Name</label
+							>
+							<input
+								aria-describedby="emailHelp"
+								class="form-control"
+								id="name"
+								placeholder="your name"
+								type="text" />
+						</div>
+						<div class="form-group my-3">
+							<label
+								for="email"
+								class="my-1"
+								>Email</label
+							>
+							<input
+								class="form-control"
+								id="email"
+								placeholder="email"
+								type="email" />
+						</div>
+						<div class="form-group my-3">
+							<label
+								for="message"
+								class="my-1"
+								>Message</label
+							>
+							<textarea
+								style="min-height: 100px"
+								class="form-control"
+								id="message"
+								placeholder="message"></textarea>
+						</div>
 
+						<button
+							class="btn w-100 btn-primary"
+							type="submit">
+							Submit
+						</button>
+					</form>
+				</div>
+			</section>
+		</main>
 
-<footer class="footer bg-less-dark">
-    <h2 class="visually-hidden">Footer</h2>
-    <div class="wrapper">
-        <nav class="header__nav" >
-            <h2 class="visuallyhidden">Navigation</h2>
+		<!--<footer class="footer bg-less-dark">-->
+		<!--    <h2 class="visually-hidden">Footer</h2>-->
+		<!--    <div class="wrapper">-->
+		<!--        <nav class="header__nav" >-->
+		<!--            <h2 class="visuallyhidden">Navigation</h2>-->
 
-            <a href="#" class="header_home">
-                thiunuwan
-                <span class="visuallyhidden">(to home page)</span>
-            </a>
-            <a href="https://github.com/thiunuwan" target=”_blank”  class="social-img"><img src="img/g4.png" alt="GitHub" width="35" height="35"></a>
-            <a href="https://www.linkedin.com/in/ravindu-thiunuwan-48509324b/" target=”_blank”  class="social-img"><img src="img/ln.png" alt="LinkedIn" width="38" height="38"></a>
-            <a href="https://www.hackerrank.com/thiunuwan?hr_r=1" target=”_blank”  class="social-img last"><img src="img/hr-2.png" alt="hackerrank" width="38" height="38"></a>
+		<!--            <a href="#" class="header_home">-->
+		<!--                thiunuwan-->
+		<!--                <span class="visuallyhidden">(to home page)</span>-->
+		<!--            </a>-->
+		<!--            <a href="https://github.com/thiunuwan" target=”_blank”  class="social-img"><img src="img/g4.png" alt="GitHub" width="35" height="35"></a>-->
+		<!--            <a href="https://www.linkedin.com/in/ravindu-thiunuwan-48509324b/" target=”_blank”  class="social-img"><img src="img/ln.png" alt="LinkedIn" width="38" height="38"></a>-->
+		<!--            <a href="https://www.hackerrank.com/thiunuwan?hr_r=1" target=”_blank”  class="social-img last"><img src="img/hr-2.png" alt="hackerrank" width="38" height="38"></a>-->
 
-
-        </nav>
-    </div>
-</footer>
-
-</body>
+		<!--        </nav>-->
+		<!--    </div>-->
+		<!--</footer>-->
+	</body>
 </html>
