@@ -1,6 +1,5 @@
 /*Global*/
 
-
 :root{
     --bg-body:#151515;
     --bg-contact:#242424;
@@ -34,10 +33,57 @@ body{
     color: var(--text1);
     font-size:var(--fs-18);
     line-height: 1.56;
+    padding-bottom: 30rem;
+
+
+}
+
+h1,h2,h3,p{
+    margin-top: 0;
+}
+
+h1,h2,h3,p{
+    line-height: 1;
+}
+
+h1{
+    font-size: 2.2rem;
+    font-size: clamp( 2.2rem, 0.7rem + 7.6vw,5.5rem);
+
+}
+
+
+p{
+    font-size: 1rem;
+    font-size: clamp(1rem,0.79rem + 0.89vw ,1.125rem);
+    line-height: 1.5;
+    color: var(--text2);
+
 }
 
 a{
     transition: color 350ms ease-in-out;
+}
+
+a.underline{
+    display: inline-block;
+    padding-bottom: 0.625px;
+    font-size: 1rem;
+    line-height: 1.625;
+    font-weight: 700;
+    letter-spacing: 2.29px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--text1);
+
+    background-image:linear-gradient(
+            to right,
+            var(--accent) 75%,
+            var(--accent) 75%
+    );
+    background-position: 0 2.1em;
+    background-repeat:repeat-x;
+    background-size:8px 2px;
 }
 
 a:hover{
@@ -59,22 +105,28 @@ a:hover{
 }
 
 
-/*header*/
+/*.
+       Header Section
+                            */
+
 .header{
-margin-top: 20px;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
 }
 .header_nav{
     display: flex;
     flex-wrap: wrap;   /*#*/
     justify-content: center;  /*#*/
     text-align: center; /*#*/
-    gap: 20px 25px;
+    gap: 20px 12px;
+
 
 }
 
 .header_home{
-    font-size: 1.5rem;
-    font-size: clamp( 1.5rem, 1.02rem + 2.04vw, 2rem);  /*using fluid typography calculator tool*/
+    font-size: 1.2rem;
+    font-size: clamp( 1.2rem, 1.02rem + 2.04vw, 1.8rem);  /*using fluid typography calculator tool*/
     line-height: 1;
     color:var(--text1) ;
     text-decoration: none;
@@ -84,6 +136,7 @@ margin-top: 20px;
 .social-img img{
     display:block;
 }
+
 
 
 /*hidden*/
@@ -104,10 +157,174 @@ margin-top: 20px;
         align-items: center;
         text-align: left;
         gap: 32px;
+        margin-bottom: 90px;
     }
 
     .header_home{
         flex: 1 0 0%;
         margin-inline-end: auto/*#*/
     }
+}
+
+@media (min-width: 62.5em) {
+  .header{
+      margin-bottom:10px;
+  }
+
+}
+
+
+/*.
+       Hero Section
+                            */
+
+.hero{
+
+}
+
+.hero_wrapper{
+   padding-bottom:80px;
+    border-bottom: 1px solid var(--text2);
+}
+
+.hero__image{
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    translate: -50%;
+    outline:4px solid var(--accent);
+    display: block;
+    width: 250px;
+    height: auto;
+    /*box-shadow: inset 0 0 0 9px rgb(203, 37, 37);*/
+    order: 1;
+    animation:profile_animate 10s ease-in-out infinite -5s;
+
+}
+
+@keyframes  profile_animate {
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+
+
+.hero__text{
+
+    position: relative;
+   text-align: center;
+    margin-top:300px;
+
+}
+
+.hero__headline{
+    position: relative;
+    top: -10px;
+    margin-bottom: 20px;
+    /*border: 5px solid red;*/
+}
+
+.hero__headline > br {
+    display: none;
+}
+
+
+h1 > span{
+    background-image:linear-gradient(
+            to right,
+            var(--accent) 75%,
+            var(--accent) 75%
+    );
+    background-position: 0 1.2em;
+    background-repeat:repeat-x;
+    background-size:8px 4px;
+}
+
+
+
+.hero__contact{
+
+}
+
+.hero__description{
+    margin-bottom: 15px;
+}
+
+/*for tablet*/
+@media (min-width: 37.5em) {
+
+    .hero_wrapper{
+        padding-bottom:60px;
+    }
+
+    .hero__image{
+        width: 15rem;
+        height: auto;
+        left: auto;
+        top: 250px;
+        right: 20px;
+        translate: 0%;
+    }
+    .hero__headline{
+        margin-bottom: 60px;
+    }
+
+    .hero__text{
+        width: 62vw;
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .hero__description{
+        margin-bottom: 34px;
+    }
+
+
+    .hero__headline > br {
+        display:inline-block;
+    }
+
+}
+
+/*desktop breakpoint*/
+@media (min-width: 62.5em) {
+
+    .hero__image{
+        width: 20rem;
+        height: auto;
+        left: auto;
+       top: 15px;
+        right: -70px;
+
+        translate: 0%;
+    }
+
+    .hero__text{
+        width: 62vw;
+         margin-top: 0;
+         text-align: left;
+     }
+
+
+    .hero_wrapper{
+        position: relative;
+    }
+
+    .hero__headline{
+        margin-bottom: 43px;
+    }
+    .hero__description{
+        margin-bottom: 66px;
+    }
+
+
+    .hero__headline > br {
+        /*display:none;*/
+    }
+
 }
