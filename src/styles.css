@@ -36,7 +36,7 @@ body {
 	color: var(--text1) !important;
 	font-size: var(--fs-18);
 	line-height: 1.56;
-	padding-bottom: 30rem;
+	/* padding-bottom: 30rem; */
 }
 
 h1,
@@ -532,4 +532,56 @@ picture > img {
 
 /*Large devices (desktops, less than 1200px)*/
 @media (max-width: 1199.98px) {
+}
+
+/* FOOTER */
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+	background: var(--bg-contact);
+	color: #969da5;
+	font-size: 14px;
+	text-align: center;
+	padding: 30px 0;
+	margin-bottom: 10px;
+}
+
+#footer h3 {
+	font-size: 36px;
+	font-weight: 700;
+	position: relative;
+	font-family: 'Space Grotesk', sans-serif;
+	padding: 0;
+	margin: 0 0 15px 0;
+}
+
+#footer p {
+	font-size: 15;
+	padding: 0;
+	margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+	margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+	font-size: 18px;
+	display: inline-block;
+	background: rgb(64, 72, 65);
+	color: #fff;
+	line-height: 1;
+	margin-right: 4px;
+	border-radius: 50%;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+	background: #b8c3cd;
+	color: #fff;
+	text-decoration: none;
 }

@@ -38,20 +38,6 @@
 			integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
 			rel="stylesheet" />
 		<title>Thiunuwan</title>
-		<script
-			type="text/javascript"
-			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-		<script type="text/javascript">
-			emailjs.init('VCG0NZdqW-JAzUun3');
-		</script>
-
-		<script>
-			(function () {
-				// https://dashboard.emailjs.com/admin/account
-				emailjs.init('VCG0NZdqW-JAzUun3');
-			})();
-		</script>
 	</head>
 	<body>
 		<header>
@@ -126,7 +112,7 @@
 		<main class="container mt-lg-5">
 			<section
 				class="row pt-5 mb-5"
-				style="margin-top: 110px">
+				style="margin-top: 60px">
 				<div
 					class="col-12 col-lg-5 d-flex justify-content-center order-lg-1 align-items-center pb-lg-0 pb-5">
 					<picture class="d-flex justify-content-center">
@@ -375,17 +361,18 @@
 					style="margin-top: 100px">
 					Projects
 				</h2>
-				<div class="row mb-5">
+				<div class="row mb-4">
 					<div class="col-12 col-lg-6 d-flex flex-column align-items-center">
 						<picture class="projects__picture">
 							<source
 								media="(min-width: 62.5em)"
-								srcset="assets/images/aloqAt.png" />
+								srcset="assets/images/alocAT.png"
+								style="width: 907" />
 							<img
 								alt="screenshot of website"
 								class="projects__image"
 								height="300"
-								src="assets/images/aloqAt.png" />
+								src="assets/images/alocAT.png" />
 						</picture>
 						<h3 class="projects__name">Alloc@</h3>
 						<h3
@@ -447,14 +434,10 @@
 						</p>
 						<div class="projects__links d-flex flex-column align-items-center">
 							<a
-								class="underline"
-								href=""
-								>View Project</a
-							>
-							<a
-								class="underline"
-								href=""
-								>View Code</a
+								class="underline mt-3"
+								href="https://github.com/hemanthawanniarachchi/Hardware-Project"
+								target="_blank"
+								><u>View Code</u></a
 							>
 						</div>
 					</div>
@@ -603,77 +586,78 @@
 
 			<hr
 				id="contact"
-				style="border-color: white; height: 2px; margin-bottom: 100px" />
+				style="border-color: white; height: 2px" />
 
 			<section class="container mt-5">
 				<h2 class="projects__headline header-xl mb-4">Contact</h2>
-				<div class="row justify-content-center">
-					<form style="max-width: 800px">
-						<div class="form-group my-3">
-							<label
-								for="name"
-								class="my-1"
-								>Your Name</label
-							>
-							<input
-								aria-describedby="emailHelp"
-								class="form-control"
-								id="name"
-								placeholder="your name"
-								type="text" />
-						</div>
-						<div class="form-group my-3">
-							<label
-								for="email"
-								class="my-1"
-								>Email</label
-							>
-							<input
-								class="form-control"
-								id="email"
-								placeholder="email"
-								type="email" />
-						</div>
-						<div class="form-group my-3">
-							<label
-								for="message"
-								class="my-1"
-								>Message</label
-							>
-							<textarea
-								style="min-height: 100px"
-								class="form-control"
-								id="message"
-								placeholder="message"></textarea>
-						</div>
-
-						<button
-							class="btn w-100 btn-primary"
-							type="submit">
-							Submit
-						</button>
-					</form>
-				
+				<div
+					class="row justify-content-center"
+					style="margin-bottom: 5rem">
+					<button
+						class="btn btn-primary"
+						style="
+							width: 200px;
+							margin-top: 90px;
+							background-color: #4ee1a0;
+							color: black;
+							border: 1px soild #32674f I !important;
+						">
+						<a
+							href="mailto:ravinduthiunuwan@gmail.com"
+							style="color: black"
+							>Contact me</a
+						>
+					</button>
+					<center><p class="mt-2">Email : ravinduthiunuwan@gmail.com</p></center>
 				</div>
 			</section>
 		</main>
 
-		<!--<footer class="footer bg-less-dark">-->
-		<!--    <h2 class="visually-hidden">Footer</h2>-->
-		<!--    <div class="wrapper">-->
-		<!--        <nav class="header__nav" >-->
-		<!--            <h2 class="visuallyhidden">Navigation</h2>-->
+		<footer id="footer">
+			<div class="container">
+				<h3>Ravindu Thiunuwan</h3>
+				<p>
+					Let's build something extraordinary together!. Whether you're looking to revamp your
+					website or start a new project, I'm here to bring your vision to life. Get in touch and
+					let's create something amazing!
+				</p>
 
-		<!--            <a href="#" class="header_home">-->
-		<!--                thiunuwan-->
-		<!--                <span class="visuallyhidden">(to home page)</span>-->
-		<!--            </a>-->
-		<!--            <a href="https://github.com/thiunuwan" target=”_blank”  class="social-img"><img src="img/g4.png" alt="GitHub" width="35" height="35"></a>-->
-		<!--            <a href="https://www.linkedin.com/in/ravindu-thiunuwan-48509324b/" target=”_blank”  class="social-img"><img src="img/ln.png" alt="LinkedIn" width="38" height="38"></a>-->
-		<!--            <a href="https://www.hackerrank.com/thiunuwan?hr_r=1" target=”_blank”  class="social-img last"><img src="img/hr-2.png" alt="hackerrank" width="38" height="38"></a>-->
+				<div class="social-links">
+					<a
+						class="social-img"
+						href="https://github.com/thiunuwan"
+						target="”_blank”">
+						<img
+							alt="GitHub"
+							height="35"
+							src="img/g4.png"
+							width="35" />
+					</a>
+					<a
+						class="social-img last"
+						href="https://www.hackerrank.com/thiunuwan?hr_r=1"
+						target="”_blank”"
+						><img
+							alt="hackerrank"
+							height="38"
+							src="img/hr-2.png"
+							width="38"
+					/></a>
+					<a
+						class="social-img"
+						href="https://www.linkedin.com/in/ravindu-thiunuwan-48509324b/"
+						target="”_blank”"
+						><img
+							alt="LinkedIn"
+							height="38"
+							src="img/ln.png"
+							width="38"
+					/></a>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer -->
 
-		<!--        </nav>-->
-		<!--    </div>-->
-		<!--</footer>-->
+		<script src="/src/script.js"></script>
 	</body>
 </html>
