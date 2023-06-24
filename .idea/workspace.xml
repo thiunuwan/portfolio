@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fadd5f4c-e225-445c-85a0-b0c3d140abf9" name="Default Changelist" comment="add todo project">
+    <list default="true" id="fadd5f4c-e225-445c-85a0-b0c3d140abf9" name="Default Changelist" comment="bug fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -55,7 +55,7 @@
       <workItem from="1687523103477" duration="8173000" />
       <workItem from="1687597959860" duration="236000" />
       <workItem from="1687598219503" duration="1336000" />
-      <workItem from="1687638228825" duration="2049000" />
+      <workItem from="1687638228825" duration="2852000" />
     </task>
     <task id="LOCAL-00001" summary="bug fix">
       <created>1687599487890</created>
@@ -71,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687639895531</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="bug fix">
+      <created>1687640449520</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687640449520</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,8 +96,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bug fix" />
     <MESSAGE value="add todo project" />
-    <option name="LAST_COMMIT_MESSAGE" value="add todo project" />
+    <MESSAGE value="bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix" />
   </component>
 </project>
