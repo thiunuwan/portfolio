@@ -375,14 +375,14 @@ picture > img {
 #footer {
 	background: var(--bg-contact);
 	color: #969da5;
-	font-size: 14px;
+	font-size: 15px;
 	text-align: center;
 	padding: 30px 0;
 	margin-bottom: 10px;
 }
 
 #footer h3 {
-	font-size: 36px;
+	font-size: 25px;
 	font-weight: 700;
 	position: relative;
 	font-family: 'Space Grotesk', sans-serif;
@@ -391,7 +391,7 @@ picture > img {
 }
 
 #footer p {
-	font-size: 15;
+	font-size: 10;
 	padding: 0;
 	margin: 0 0 40px 0;
 }
